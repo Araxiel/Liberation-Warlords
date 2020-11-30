@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Stormtalon">
+	<Package name="Mission One">
+		<Container name="Some Words">
+			<Key ID="str_myTag_Yes">
+				<Original>yes</Original>
+			</Key>
+			<Key ID="str_myTag_No">
+				<Original>no</Original>
+			</Key>
+		</Container>
+		<Container name="Another Container">
+			<Key ID="str_myTag_another_key">
+				<Original></Original>
+			</Key>
+			<Key ID="str_myTag_formatted">
+				<Original>Hello, %1.</Original>
+			</Key>
+			<Key ID="str_myTag_structured">
+				<Original>Some text &amp;lt;t color='%1'&amp;gt;%2&amp;lt;/t&amp;gt;</Original>
+			</Key>
+		</Container>
+	</Package>
+</Project>

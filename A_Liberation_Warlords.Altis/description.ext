@@ -1,0 +1,119 @@
+
+// Mission by Araxiel
+//---------------
+
+//----------------Description--------------------
+
+author="Araxiel";
+displayName = "Liberation Warlords DISPLAY";
+briefingName = "TODO BRIEFING";
+
+//------------Loading Sceen-------------
+
+onLoadName		= "Liberation Warlords";
+OnLoadMission = "A more cooperative and pure PVE centered version of Warlords, with extra goodies.";
+onLoadMissionTime = 1;
+//TODO loadScreen		= "images\loadScreen.paa";
+
+//------------Overview------------------
+
+overviewText 		= "Some spec-ops shit OVERVIEW TODO.";
+overviewTextLocked 	= "";
+overviewPicture 	= "\a3\Missions_F_gamma\data\img\MP_COOP_m06_overview_CA.paa";
+
+//--------------------Header------------------------
+
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 10; //max # of players the mission supports
+};
+
+//----------------Respawn--------------------------
+
+respawn = 3;	// Respawn type
+respawnDelay = 2;	// Delay in seconds
+respawnVehicleDelay = 30;	// Delay in seconds
+respawnDialog = 0; // 0 to disable the score table (it can still be opened by pressing 'P').
+respawnTemplates[] = {"Wave", "MenuInventory", "MenuPosition"}; // Respawn templates from CfgRespawnTemplates.
+respawnOnStart = -1; // 1 to execute respawn templates when a player joins the game.
+aikills = 0; // When 1, the score table contains score of all playable units as opposed to players only.
+
+//----------------Revive--------------------------
+
+ReviveMode = 1;                         //0: disabled, 1: enabled, 2: controlled by player attributes
+ReviveUnconsciousStateMode = 0;         //0: basic, 1: advanced, 2: realistic
+ReviveRequiredTrait = 0;                //0: none, 1: medic trait is required
+ReviveRequiredItems = 2;                //0: none, 1: medkit, 2: medkit or first aid kit
+ReviveRequiredItemsFakConsumed = 1;     //0: first aid kit is not consumed upon revive, 1: first aid kit is consumed
+ReviveDelay = 15;                        //time needed to revive someone (in secs)
+ReviveMedicSpeedMultiplier = 3;         //speed multiplier for revive performed by medic
+ReviveForceRespawnDelay = 2;            //time needed to perform force respawn (in secs)
+ReviveBleedOutDelay = 180;              //unconscious state duration (in secs)
+
+//--------------------Corpse removal--------------
+corpseLimit 		= 40;
+corpseRemovalMinTime 	= 60;
+corpseRemovalMaxTime 	= 1200;
+
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1200;
+
+//------------------Parameters----------------------
+
+class Params
+{
+	/*	TODO/ACTIVATE for MP	- Add more options
+	class Daytime
+	{
+		title = "Time";
+		texts[] = {"Morning","Day","Evening","Night"};
+		values[] = {6,12,18,0};
+		default = 18;
+		function = "BIS_fnc_paramDaytime"; // (Optional) Function called when player joins, selected value is passed as an argument
+		isGlobal = 1; // (Optional) 1 to execute script / function locally for every player who joins, 0 to do it only on server
+	};
+	class Weather
+	{
+		title = "Weather";
+		texts[] = {"Sunny","Overcast","Rainy","Storm"};
+		values[] = {0,50,70,100};
+		default = 50;
+		function = "BIS_fnc_paramWeather";
+		isGlobal = 0;
+	};
+	*/
+	class respawnDelay
+	{
+		title = "Respawn Delay";
+		values[] = {0,10,15,20,25,30,35,40,45,50,55,60};
+		texts[] = {"0 sec","10 sec","15 sec","20 sec","25 sec","30 sec","35 sec","40 sec","45 sec","50 sec","55 sec","60 sec"};
+		default = 15;
+	};
+	#include "\a3\Functions_F\Params\paramRevive.hpp"
+};
+
+
+//---------------Other Options-----------------------
+// enableDebugConsole = 1;//dangerous in MP
+
+//---------------Include other files--------------
+
+#include "Setup\cfgRespawnInventory.hpp"
+
+//#include "Localisation\task_localisation.hpp"						  //Localisation
+
+//Imported Stuff
+#include "modules\grad-listBuymenu\grad_listBuymenu.hpp"
+#include "modules\grad-moneymenu\grad_moneymenu.hpp"
+class CfgFunctions {
+    #include "modules\grad-listBuymenu\cfgFunctions.hpp"
+    #include "modules\grad-moneymenu\cfgFunctions.hpp"
+};
+
+#include "modules\grad-parameters.hpp"						  //Configuration for buymenu and moneymenu
+#include "Progression\stores.hpp"						  //Shops to buy stuff
+
+#include "ORBAT\cfgORBAT.hpp"						  //ORBAT
