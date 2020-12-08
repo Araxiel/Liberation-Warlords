@@ -1,3 +1,6 @@
+//server starting
+diag_log "----------- MAP START -------------------------------------------------------------------------------------------------------------------------";
+
 //Loadouts
 [west, ["Blufor1",-1,-1]] call BIS_fnc_addRespawnInventory;
 [west, ["Blufor2",-1,-1]] call BIS_fnc_addRespawnInventory;
@@ -13,22 +16,24 @@ _date set [3,_hour];
 setdate _date;
 */
 
-//Car alarms
-{
-	_x setVariable ["BIS_alarmEventHandler", _x addEventHandler ["Hit", {
-		//The car
-		private "_car";
-		_car = _this select 0;
+// disable the usage of Freedom turrets.
 
-		//Remove event handler
-		_car removeEventHandler ["Hit", _car getVariable "BIS_alarmEventHandler"];
+[] spawn {
+    if (!hasInterface) exitWith {};
+    while {true} do {
+        // Check if the player has an AV terminal
+        if ("B_UavTerminal" in assignedItems player) then {
+            // This code must be run each time the player gets a new AV terminal
+            {player disableUAVConnectability [_x,true];} forEach [carrier_sam_0,carrier_sam_1,carrier_sam_2,carrier_sam_3,carrier_sam_4,carrier_sam_5,carrier_sam_6];
+            while {("B_UavTerminal" in assignedItems player)} do {sleep 3;};
+        };
+        sleep 3;
+    };
+}; 
 
-		//Execute alarm script
-		[[[_car], "Setup\carAlarm.sqf"], "BIS_fnc_execVM"] call BIS_fnc_mp;
+// global variables
+store_unlocked_carrierfixedwing = false;
+store_unlocked_carrierchopper = false;
+destroyer_arrived = false;
 
-		//Log
-		["Car (%1) alarm went off at %2", _car, time] call BIS_fnc_logFormat;
-	}]];
-} forEach [
-	civ_car_1
-];
+execVM "Mission\location_init.sqf";

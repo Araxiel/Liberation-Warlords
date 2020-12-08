@@ -98,6 +98,7 @@ class Params
 
 //---------------Other Options-----------------------
 // enableDebugConsole = 1;//dangerous in MP
+allowFunctionsLog = 1;
 
 //---------------Include other files--------------
 
@@ -111,9 +112,11 @@ class Params
 class CfgFunctions {
     #include "modules\grad-listBuymenu\cfgFunctions.hpp"
     #include "modules\grad-moneymenu\cfgFunctions.hpp"
+	#include "LARs\spawnSector\functions\spawnSector.fncs"
 };
 
 #include "modules\grad-parameters.hpp"						  //Configuration for buymenu and moneymenu
-#include "Progression\stores.hpp"						  //Shops to buy stuff
+#include "Progression\stores.hpp"					  //Shops to buy stuff
 
-#include "ORBAT\cfgORBAT.hpp"						  //ORBAT
+#include "Mission\CfgTaskDescriptions.hpp"				//Tasks
+#include "ORBAT\cfgORBAT.hpp"					  //ORBAT

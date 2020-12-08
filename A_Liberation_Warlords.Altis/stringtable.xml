@@ -1,24 +1,229 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project name="Stormtalon">
-	<Package name="Mission One">
-		<Container name="Some Words">
-			<Key ID="str_myTag_Yes">
-				<Original>yes</Original>
-			</Key>
-			<Key ID="str_myTag_No">
-				<Original>no</Original>
-			</Key>
-		</Container>
-		<Container name="Another Container">
-			<Key ID="str_myTag_another_key">
-				<Original></Original>
-			</Key>
-			<Key ID="str_myTag_formatted">
-				<Original>Hello, %1.</Original>
-			</Key>
-			<Key ID="str_myTag_structured">
-				<Original>Some text &amp;lt;t color='%1'&amp;gt;%2&amp;lt;/t&amp;gt;</Original>
-			</Key>
-		</Container>
-	</Package>
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="LiberationWarlods">
+  <Package name="Locations">
+    <Container name="Phase 1">
+      <Key ID="STR_loc_lbeach1">
+        <Original>Alfa Beach</Original>
+        <English>Alfa Beach</English>
+        <Czech>Alfa Beach</Czech>
+        <French>Alfa Beach</French>
+        <Spanish>Alfa Beach</Spanish>
+        <Italian>Alfa Beach</Italian>
+        <Polish>Alfa Beach</Polish>
+        <Portuguese>Alfa Beach</Portuguese>
+        <Russian>Alfa Beach</Russian>
+        <German>Alfa Beach</German>
+      </Key>
+      <Key ID="STR_loc_lbeach2">
+        <Original>Bravo Beach</Original>
+        <English>Bravo Beach</English>
+        <Czech>Bravo Beach</Czech>
+        <French>Bravo Beach</French>
+        <Spanish>Bravo Beach</Spanish>
+        <Italian>Bravo Beach</Italian>
+        <Polish>Bravo Beach</Polish>
+        <Portuguese>Bravo Beach</Portuguese>
+        <Russian>Bravo Beach</Russian>
+        <German>Bravo Beach</German>
+      </Key>
+      <Key ID="STR_loc_lbeach3">
+        <Original>Charlie Beach</Original>
+        <English>Charlie Beach</English>
+        <Czech>Charlie Beach</Czech>
+        <French>Charlie Beach</French>
+        <Spanish>Charlie Beach</Spanish>
+        <Italian>Charlie Beach</Italian>
+        <Polish>Charlie Beach</Polish>
+        <Portuguese>Charlie Beach</Portuguese>
+        <Russian>Charlie Beach</Russian>
+        <German>Charlie Beach</German>
+      </Key>
+      <Key ID="STR_loc_lbeach4">
+        <Original>Delta Beach</Original>
+        <English>Delta Beach</English>
+        <Czech>Delta Beach</Czech>
+        <French>Delta Beach</French>
+        <Spanish>Delta Beach</Spanish>
+        <Italian>Delta Beach</Italian>
+        <Polish>Delta Beach</Polish>
+        <Portuguese>Delta Beach</Portuguese>
+        <Russian>Delta Beach</Russian>
+        <German>Delta Beach</German>
+      </Key>
+      <Key ID="STR_loc_lbeach5">
+        <Original>Echo Beach</Original>
+        <English>Echo Beach</English>
+        <Czech>Echo Beach</Czech>
+        <French>Echo Beach</French>
+        <Spanish>Echo Beach</Spanish>
+        <Italian>Echo Beach</Italian>
+        <Polish>Echo Beach</Polish>
+        <Portuguese>Echo Beach</Portuguese>
+        <Russian>Echo Beach</Russian>
+        <German>Echo Beach</German>
+      </Key>
+      <Key ID="STR_loc_strigla">
+        <Original>Strigla Lighthouse</Original>
+        <English>Strigla Lighthouse</English>
+        <Czech>Strigla Lighthouse</Czech>
+        <French>Strigla Lighthouse</French>
+        <Spanish>Strigla Lighthouse</Spanish>
+        <Italian>Strigla Lighthouse</Italian>
+        <Polish>Strigla Lighthouse</Polish>
+        <Portuguese>Strigla Lighthouse</Portuguese>
+        <Russian>Strigla Lighthouse</Russian>
+        <German>Strigla Lighthouse</German>
+      </Key>
+      <Key ID="STR_loc_nidasos">
+        <Original>Nidasos Beach</Original>
+        <English>Nidasos Beach</English>
+        <Czech>Nidasos Beach</Czech>
+        <French>Nidasos Beach</French>
+        <Spanish>Nidasos Beach</Spanish>
+        <Italian>Nidasos Beach</Italian>
+        <Polish>Nidasos Beach</Polish>
+        <Portuguese>Nidasos Beach</Portuguese>
+        <Russian>Nidasos Beach</Russian>
+        <German>Nidasos Beach</German>
+      </Key>
+      <Key ID="STR_loc_molosair">
+        <Original>Molos Airfield</Original>
+        <English>Molos Airfield</English>
+        <Czech>Molos Airfield</Czech>
+        <French>Molos Airfield</French>
+        <Spanish>Molos Airfield</Spanish>
+        <Italian>Molos Airfield</Italian>
+        <Polish>Molos Airfield</Polish>
+        <Portuguese>Molos Airfield</Portuguese>
+        <Russian>Molos Airfield</Russian>
+        <German>Molos Airfield</German>
+      </Key>
+      <Key ID="STR_loc_iraklia">
+        <Original>Iraklia</Original>
+        <English>Iraklia</English>
+        <Czech>Iraklia</Czech>
+        <French>Iraklia</French>
+        <Spanish>Iraklia</Spanish>
+        <Italian>Iraklia</Italian>
+        <Polish>Iraklia</Polish>
+        <Portuguese>Iraklia</Portuguese>
+        <Russian>Iraklia</Russian>
+        <German>Iraklia</German>
+      </Key>
+    </Container>
+  </Package>
+  <Package name="Tasks">
+    <Container name="Phase 0">
+      <Key ID="STR_prnt_tks0">
+        <Original>Phase 0: Landing</Original>
+        <English>Phase 0: Landing</English>
+        <Czech>Phase 0: Landing</Czech>
+        <French>Phase 0: Landing</French>
+        <Spanish>Phase 0: Landing</Spanish>
+        <Italian>Phase 0: Landing</Italian>
+        <Polish>Phase 0: Landing</Polish>
+        <Portuguese>Phase 0: Landing</Portuguese>
+        <Russian>Phase 0: Landing</Russian>
+        <German>Phase 0: Landing</German>
+      </Key>
+      <Key ID="STR_prnt_tks0dsc">
+        <Original>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Original>
+        <English>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</English>
+        <Czech>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state. Only one location is needed to start our assault.</Czech>
+        <French>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</French>
+        <Spanish>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Spanish>
+        <Italian>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Italian>
+        <Polish>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Polish>
+        <Portuguese>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Portuguese>
+        <Russian>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</Russian>
+        <German>There are multiple potential spots for our initial landing, that our recon teams were able to make out before the storm started. While most of them should be clear of enemies, the storm just subsided and thusly we lack intelligence on those spots' current state.</German>
+      </Key>
+      <Key ID="STR_loc_lbeach_tskdsc">
+        <Original>This is one of the multiple potential initial landing spots to chose from.</Original>
+        <English>This is one of the multiple potential initial landing spots to chose from.</English>
+        <Czech>This is one of the multiple potential initial landing spots to chose from.</Czech>
+        <French>This is one of the multiple potential initial landing spots to chose from.</French>
+        <Spanish>This is one of the multiple potential initial landing spots to chose from.</Spanish>
+        <Italian>This is one of the multiple potential initial landing spots to chose from.</Italian>
+        <Polish>This is one of the multiple potential initial landing spots to chose from.</Polish>
+        <Portuguese>This is one of the multiple potential initial landing spots to chose from.</Portuguese>
+        <Russian>This is one of the multiple potential initial landing spots to chose from.</Russian>
+        <German>This is one of the multiple potential initial landing spots to chose from.</German>
+      </Key>
+      <Key ID="STR_loc_nidasos_tsk0dsc">
+        <Original>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Original>
+        <English>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</English>
+        <Czech>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Czech>
+        <French>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</French>
+        <Spanish>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Spanish>
+        <Italian>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Italian>
+        <Polish>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Polish>
+        <Portuguese>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Portuguese>
+        <Russian>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</Russian>
+        <German>Nidasos is quite close to enemy controlled Iraklia, but it might take the enemy force by surprise.</German>
+      </Key>
+      <Key ID="STR_loc_molosair_tsk0dsc">
+        <Original>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Original>
+        <English>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</English>
+        <Czech>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Czech>
+        <French>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</French>
+        <Spanish>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Spanish>
+        <Italian>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Italian>
+        <Polish>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Polish>
+        <Portuguese>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Portuguese>
+        <Russian>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</Russian>
+        <German>Immideatly going for the Molos airfield might provide a very useful asset this early on, but definitly expect some resistence.</German>
+      </Key>
+      <Key ID="STR_loc_strigla_tsk0dsc">
+        <Original>The Stigla lighthouse might make for a good landing spot.</Original>
+        <English>The Stigla lighthouse might make for a good landing spot.</English>
+        <Czech>The Stigla lighthouse might make for a good landing spot.</Czech>
+        <French>The Stigla lighthouse might make for a good landing spot.</French>
+        <Spanish>The Stigla lighthouse might make for a good landing spot.</Spanish>
+        <Italian>The Stigla lighthouse might make for a good landing spot.</Italian>
+        <Polish>The Stigla lighthouse might make for a good landing spot.</Polish>
+        <Portuguese>The Stigla lighthouse might make for a good landing spot.</Portuguese>
+        <Russian>The Stigla lighthouse might make for a good landing spot.</Russian>
+        <German>The Stigla lighthouse might make for a good landing spot.</German>
+      </Key>
+      <Key ID="STR_loc_iraklia_tsk0dsc">
+        <Original>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Original>
+        <English>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</English>
+        <Czech>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Czech>
+        <French>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</French>
+        <Spanish>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Spanish>
+        <Italian>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Italian>
+        <Polish>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Polish>
+        <Portuguese>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Portuguese>
+        <Russian>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</Russian>
+        <German>Iraklia is in enemy hands and should be avoided, but attacking the enemy head on might be just crazy enough to work.</German>
+      </Key>
+    </Container>
+    <Container name="Phase 1">
+      <Key ID="STR_prnt_tks1">
+        <Original>Phase 1: Establish Foothold</Original>
+        <English>Phase 1: Establish Foothold</English>
+        <Czech>Phase 1: Establish Foothold</Czech>
+        <French>Phase 1: Establish Foothold</French>
+        <Spanish>Phase 1: Establish Foothold</Spanish>
+        <Italian>Phase 1: Establish Foothold</Italian>
+        <Polish>Phase 1: Establish Foothold</Polish>
+        <Portuguese>Phase 1: Establish Foothold</Portuguese>
+        <Russian>Phase 1: Establish Foothold</Russian>
+        <German>Phase 1: Establish Foothold</German>
+      </Key>
+      <Key ID="STR_prnt_tks1_tsk1dsc">
+        <Original>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Original>
+        <English>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</English>
+        <Czech>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Czech>
+        <French>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</French>
+        <Spanish>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Spanish>
+        <Italian>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Italian>
+        <Polish>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Polish>
+        <Portuguese>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Portuguese>
+        <Russian>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</Russian>
+        <German>With a landingside secured, reinforcements, supplies and material can start arriving from the USS Freedom and the LHA-9 USS Supremacy further back. But we're still some way off from establishing a proper beachhead. We need to secure this entire tip of the peninsula.</German>
+      </Key>
+    </Container>
+  </Package>
 </Project>

@@ -16,7 +16,7 @@ class CfgORBAT
 		side = "West";
 		size = "Division";
 		type = "HQ";
-		texture = "StormOwlRey2.paa";
+		texture = __EVAL(getMissionPath "ORBAT\StormOwlRey2.paa");
 				// Unit insignia, displayed in ORBAT background and in tooltip
 		commander = "Armstrong";
 				// Name of unit commander

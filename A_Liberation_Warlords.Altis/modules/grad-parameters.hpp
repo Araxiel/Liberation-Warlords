@@ -7,6 +7,6 @@ class CfgGradMoneymenu {
     canTakeFromSurrenderedDefault = 0;                                     
     startMoney = 1000; //TODO parameter                                                    
     startBankBalance = 69;                                                  
+    atmObjects[] = {"Land_Laptop_03_sand_F"};
     playersLoseMoneyOnDeath = 0;
-    atmObjects[] = {"Land_Laptop_03_sand_F"};                                      
 };

@@ -44,6 +44,6 @@ class CfgRespawnInventory
 	class Blufor2
 	{
 		// Alternative configuration pointing to a CfgVehicles class. Loadout will be copied from it.
-		vehicle = "B_soldier_AR_F"
+		vehicle = "B_soldier_AR_F";
 	};
 };
